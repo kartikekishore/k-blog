@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "NODE_ENV=production node app",
-    "dev": "NODE_ENV=development nodemon app"
+    "dev": "cross-env NODE_ENV=development nodemon app"
   },
   "author": "Kartike Kishore",
   "license": "ISC",

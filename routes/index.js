@@ -29,7 +29,7 @@ router.get('/developer',async(req,res)=>{
 router.get('/dashboard',ensureAuth,async(req,res)=>{
     try{
            const blogs = await Blog.find({user : req.user.id}).lean().sort({ createdAt: "desc" })
-           res.render('dashBoard',{
+           res.render('dashboard',{
            name : req.user.firstName,
            blogs
           })  
